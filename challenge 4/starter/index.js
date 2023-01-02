@@ -104,3 +104,13 @@ for(let i = 1; i< finances.length; i++){
     changes.push(change);
     //connect with console.log(change);
 }
+
+// caclculate toatl in the changes array
+var totalChanges = 0;
+var averageChange = 0;
+for(var i = 0; i < changes.length; i++){
+    totalChanges = totalChanges + changes[i];
+}
+averageChange = totalChanges / changes.length;
+// 2 decimal point in averangeChange, taken from Stack Overflow suggestions;
+averageChange = averageChange.toFixed(2);
