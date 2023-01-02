@@ -120,3 +120,14 @@ var largestIncrease = Math.max.apply(0, changes);
 //find the month with the largest increase using the changes array
 var greatestDecrease = 0;
 greatestDecrease = Math.min.apply(0, changes);
+//to track above
+var greatestDecrease2 = 0;
+var incDate = "";
+var decDate = "";
+for(let i=0; i<changes.length;i++){
+    if(greatestDecrease2 > changes[i])
+    {
+        greatestDecrease2 = changes[i];
+        decDate = finances[i+1][0];
+    }
+}
