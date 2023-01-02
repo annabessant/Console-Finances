@@ -105,7 +105,7 @@ for(let i = 1; i< finances.length; i++){
     //connect with console.log(change);
 }
 
-// caclculate toatl in the changes array
+// caclculate total in the changes array
 var totalChanges = 0;
 var averageChange = 0;
 for(var i = 0; i < changes.length; i++){
@@ -114,3 +114,9 @@ for(var i = 0; i < changes.length; i++){
 averageChange = totalChanges / changes.length;
 // 2 decimal point in averangeChange, taken from Stack Overflow suggestions;
 averageChange = averageChange.toFixed(2);
+//For Greatest increase in profits, find the largest number in the changes array from Mozilla docs
+var largestIncrease = Math.max.apply(0, changes);
+
+//find the month with the largest increase using the changes array
+var greatestDecrease = 0;
+greatestDecrease = Math.min.apply(0, changes);
