@@ -86,3 +86,21 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+// The total number of months
+var totalMonth = 0;
+totalMonth = finances.length; 
+
+// The total number of months included in the dataset
+var totalValue = 0;
+for(var i = 0; i < finances.length; i++){
+    totalValue += finances[i][1];
+}
+//Average of "changes" in profit / loss 
+var change = 0;
+var changes = [];
+for(let i = 1; i< finances.length; i++){
+    change = finances[i][1] - finances[i-1][1];
+    changes.push(change);
+    //connect with console.log(change);
+}
