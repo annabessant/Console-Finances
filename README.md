@@ -21,3 +21,6 @@ https://annabessant.github.io/Console-Finances/
 
 ## Contact
 For further details and follow-up: anna@thefutureofinnovation.org 
+
+
+![something about finance](/Console_Finances.jpeg)
