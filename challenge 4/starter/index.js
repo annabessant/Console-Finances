@@ -124,11 +124,11 @@ greatestDecrease = Math.min.apply(0, changes);
 var greatestDecrease2 = 0;
 var incDate = "";
 var decDate = "";
-for(let i=0; i<changes.length;i++){
-    if(greatestDecrease2 > changes[i])
+for (let i=0;i<changes.length;i++){
+    if( greatestDecrease2 > changes[i])
     {
         greatestDecrease2 = changes[i];
-        decDate = finances[i+1][0];
+        decDate = finances[i][0];
     }
 }
 //console.log and tidy up
@@ -137,5 +137,5 @@ console.log("------------------");
 console.log("Total Month: " + totalMonth);
 console.log("Total: $" + totalValue);
 console.log("Average Change: $" + averageChange);
-console.log("Greatest Increase in profits: " + incDate + greatestIncrease);
-console.log("Greates Decrese in profits: " + decDate + " (" + greatestDecrease +")");
+console.log("Greatest Increase in profits " + incDate + greatestIncrease);
+console.log("greatest Decrese in profits: " + decDate + " (" + greatestDecrease + ")");
