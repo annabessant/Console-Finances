@@ -99,7 +99,7 @@ for(var i = 0; i < finances.length; i++){
 //Average of "changes" in profit / loss 
 var change = 0;
 var changes = [];
-for(let i = 1; i< finances.length; i++){
+for(var i = 1; i< finances.length; i++){
     change = finances[i][1] - finances[i-1][1];
     changes.push(change);
     //connect with console.log(change);
@@ -124,7 +124,7 @@ greatestDecrease = Math.min.apply(0, changes);
 var greatestDecrease2 = 0;
 var incDate = "";
 var decDate = "";
-for (let i=0;i<changes.length;i++){
+for (var i=0; i < changes.length; i++) {
     if( greatestDecrease2 > changes[i])
     {
         greatestDecrease2 = changes[i];
@@ -137,5 +137,5 @@ console.log("------------------");
 console.log("Total Month: " + totalMonth);
 console.log("Total: $" + totalValue);
 console.log("Average Change: $" + averageChange);
-console.log("Greatest Increase in profits " + incDate + greatestIncrease);
+console.log("Greatest Increase in profits: " + incDate + greatestIncrease);
 console.log("greatest Decrese in profits: " + decDate + " (" + greatestDecrease + ")");
