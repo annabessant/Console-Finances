@@ -131,3 +131,11 @@ for(let i=0; i<changes.length;i++){
         decDate = finances[i+1][0];
     }
 }
+//console.log and tidy up
+console.log("Financial Analysis");
+console.log("------------------");
+console.log("Total Month: " + totalMonth);
+console.log("Total: $" + totalValue);
+console.log("Average Change: $" + averageChange);
+console.log("Greatest Increase in profits: " + incDate + greatestIncrease);
+console.log("Greates Decrese in profits: " + decDate + " (" + greatestDecrease +")");
